@@ -18,7 +18,7 @@ with open(csv_file_path, mode='w', newline='', encoding='utf-8') as file:
     writer = csv.writer(file)
     writer.writerow(['Title', 'Land Size', 'Location', 'Total Price', 'Monthly Payment', 'Image URL'])  # Added 'Image URL' column
 
-for i in range(100):
+for i in range(100): #This loop runs 100 times. The variable i takes values from 0 to 99.
     url = f'https://www.patpat.lk/property?page={i}&city=&sub_category=&sub_category_name=&category=property&search_txt=&sort_by='
 
     response = requests.get(url)
